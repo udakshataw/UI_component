@@ -2,11 +2,12 @@ module MyUiComponents
   class MyComponentController < ApplicationController
     def new
       @my_model = MyComponentModel.new
-      render 'my_ui_components/my_component/_form'
+      puts "Inside my_component new function!"
     end
 
     def create
       # Your create action logic here
+      puts "Inside my_component create function!"
     end
   end
 end
