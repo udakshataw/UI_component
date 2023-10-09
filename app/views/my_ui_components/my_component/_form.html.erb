@@ -1,0 +1,13 @@
+<%= form_with model: @my_model, url: my_ui_components_my_component_path, method: :post do |form| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+  </div>
+  <div class="actions">
+    <%= form.submit 'Submit' %>
+  </div>
+<% end %>
