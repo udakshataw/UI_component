@@ -1,9 +1,10 @@
 module MyUiComponents
   class MyComponentController < ApplicationController
-    def index
+    def new
+      @my_model = MyComponentModel.new
     end
 
-    def new
+    def create
     end
   end
 end
