@@ -5,6 +5,7 @@ module MyUiComponents
     end
 
     def create
+      # Your create action logic here
     end
   end
 end
