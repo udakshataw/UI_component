@@ -8,6 +8,6 @@ Rails.application.routes.draw do
     #   resources :registration_form, only: [:new, :create, :index]
     get '/new', to: 'registration_form#new'
     get '/', to: 'registration_form#index'
-    post '/', to: 'registration_form#create', as: 'form_submission'
+    post '/', to: 'registration_form#create'
     end
 end
