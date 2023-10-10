@@ -1,5 +1,5 @@
-<h4>Select Tenant</h4>
-<select id="selected_tenant" name="selected_tenant[]" class='border border-lightGray rounded h-8 w-full md:w-10/12 text-xs'>
+<h4>Select Organization</h4>
+<select id="selected_org" name="selected_org[]" class='border border-lightGray rounded h-8 w-full md:w-10/12 text-xs'>
     <% tenants.each do |tenant| %>
     <option value="<%= tenant[:id] %>">
         <%= tenant[:name] %>
