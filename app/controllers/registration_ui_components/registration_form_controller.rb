@@ -3,6 +3,16 @@
 module RegistrationUiComponents
   class RegistrationFormController < ApplicationController
     def index
+      @tenants = [
+        {
+          id: 11,
+          name: 'ABCD'
+        },
+        {
+          id: 12,
+          name: 'PQRS'
+        }
+      ]
       respond_to do |f|
         f.html { render 'registration_ui_components/registration_form/index' }
       end
