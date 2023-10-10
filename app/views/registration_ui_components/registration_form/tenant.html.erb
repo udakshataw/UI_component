@@ -1,0 +1,8 @@
+<h2>Select Tenant</h2>
+<select id="selected_tenant" name="selected_tenant[]" class='border border-lightGray rounded h-8 w-full md:w-10/12 text-xs'>
+    <% tenants.each do |tenant| %>
+    <option value="<%= tenant['id'] %>">
+        <%= tenant['name'] %>
+    </option>
+    <% end %>
+</select>

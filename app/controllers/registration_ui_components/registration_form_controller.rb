@@ -21,5 +21,15 @@ module RegistrationUiComponents
     def create
       puts "Inside registration create definition!"
     end
+
+    def tenant
+      respond_to do |f|
+        f.html { render 'registration_ui_components/registration_form/tenant' }
+      end
+    end
+
+    def create_tenant
+      puts "Inside tenant create definition!"
+    end
   end
 end

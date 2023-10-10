@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     get '/new', to: 'registration_form#new'
     get '/', to: 'registration_form#index'
     post '/create', to: 'registration_form#create'
+    get '/tenant', to: 'registration_form#tenant'
+    post '/tenant', to: 'registration_form#create_tenant'
     end
 end
